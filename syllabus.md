@@ -1,21 +1,19 @@
 ---
 layout: page
 title: Syllabus
-catalog: WIS 6934
+catalog:  CHEM 33XX
 credits: 3
-semester: Fall 2015
-professor: Dr. Ethan White
-office: Room 1 in Building 150 (just north of Newins-Zeigler)
-email: ethanwhite@ufl.edu
-phone: 352-294-2081
-schedule: ['Tuesdays, 3-4, 219 Newins-Ziegler Hall',
-           'Fridays, 11:45-1:40, 222 Newins-Ziegler Hall']
-office_hours: Thursdays 3-4 pm, or by appointment
-TA: Andrew Marx
-TA_email: andrewjmarx@ufl.edu
+semester: Fall 2017
+professor: Dr. Jeramia Ory
+office: Jones 1544
+email: jeramia.ory@stlcop.edu
+phone: 314-446-8169
+schedule: ['Tuesdays & Thursdays, 10:00-11:20, ARB 223']
+appointment_url: http://drlabratory.com/calendar/schedule-appointment/
+office_hours: By appointment
 ---
 
-## {{ site.title }} 
+## {{ site.title }}
 
 {{ page.catalog }}, {{ page.credits }} Credits, {{ page.semester }}
 
@@ -33,8 +31,6 @@ Phone: {{ page.phone }}
 
 ### Times & Location
 
-**Note: class is in different locations depending on the day of the week**
-
 {% for class in page.schedule %}
   {{ class }}
 {% endfor %}
@@ -46,17 +42,15 @@ Times: {{ page.office_hours }}
 
 Location: {{ page.office }}
 
-*Note: my schedule gets very busy during the semester so please try to schedule
-appointments as far in advance as possible. In general it will be very difficult
-to set up appointments less than 24 hours in advance.*
+Appointments: [Click here to schedule an appointment]({{page.appointment_url}})
 
-
-### Course TA
-
-{{ page.TA }}
-
-Email: {{ page.TA_email }}
-
+*Note: my schedule gets busy during the semester, and I've had bad luck setting
+office hours that students show up to. I have an open door policy, so please
+feel free to stop by at any time. However, if you want to make sure I'll be in
+my office, I've cleared 12 hours during the week that are available to make
+appointments.  Please try to schedule appointments as far in advance as
+possible. In general it will be very difficult to set up appointments less than
+24 hours in advance.*
 
 ### Website
 
@@ -77,7 +71,7 @@ There is no required text book for this class.
 
 
 ### Course Description
- 
+
 Computers are increasingly essential to the study of all aspects of
 biology. Data management skills are needed for entering data without errors,
 storing it in a usable way, and extracting key aspects of the data for
@@ -93,7 +87,7 @@ programming of databases is required.
 
 ### Prerequisite Knowledge and Skills
 
-Knowledge of basic biology.
+Knowledge of basic biology and chemistry.
 
 
 ### Purpose of Course
@@ -232,9 +226,9 @@ courtesy in all email messages, threaded discussions and chats.
 
 For issues with technical difficulties for E-learning in Canvas, please contact the UF Help Desk at:
 
-* Learning-support@ufl.edu 
+* Learning-support@ufl.edu
 * (352) 392-HELP - select option 2
-* https://lss.at.ufl.edu/help.shtml 
+* https://lss.at.ufl.edu/help.shtml
 
 Any requests for make-ups due to technical issues MUST be accompanied by the
 ticket number received from LSS when the problem was reported to them. The
