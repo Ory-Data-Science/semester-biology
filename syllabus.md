@@ -81,14 +81,13 @@ introduction to data management, manipulation, and analysis, with an emphasis on
 biological problems. Class will typically consist of short introductions or
 question & answer sessions, followed by hands on computing exercises. The course
 will be taught using R and SQLite, but the concepts learned will easily apply to
-all programming languages and database management systems. No background in
-programming of databases is required.
+all programming languages and database management systems. *No background in
+programming of databases is required.*
 
 
 ### Prerequisite Knowledge and Skills
 
 Knowledge of basic biology and chemistry.
-
 
 ### Purpose of Course
 
@@ -108,34 +107,24 @@ Students completing this course will be able to:
 * Extract information from databases
 * Write simple computer programs in R
 * Automate data analysis
-* Apply these tools to address biological questions
+* Apply these tools to address biological or pharmaceutical questions
 * Apply general data management and analysis concepts to other programming
   languages and database management systems
 
 
-### How this course relates to the Student Learning Outcomes in Wildlife Ecology and Conservation
-
-This course contributes to the 'Quantitative Skills' and 'Conducting and
-Analyzing Independent/Original Research' Student Learning Outcomes specified in
-the
-[Ph.D. and MS in Wildlife Ecology and Conservation Academic Assessment Plans](http://assessment.aa.ufl.edu/Data/Sites/22/media/2013-14gaap/cals/2013-14-cals-wildlife-ecol-and-consvn-phd-aap.pdf),
-by providing students the skills and knowledge they need to manage and analyze
-the data used in research.
-
-
 ### Teaching Philosophy
 
-This class is taught using a flipped, learner-centered, approach, because
-learning to program and work with data requires actively working on
-computers. Flipped classes work well for all kinds of content, but I think they
-work particularly well for computer oriented classes. If you're interested in
-knowing more take a look at this great
+This class will be taught using a mix of short, introductory lectures and a more
+flipped, learner-centered approach. Learning to program and work with data
+requires actively working on computers. Flipped classes work well for all kinds
+of content, but I think they work particularly well for computer oriented
+classes. If you're interested in knowing more take a look at this great
 [info-graphic](http://www.knewton.com/flipped-classroom-2/).
 
 
 ### Instructional Methods
 
-As a flipped classroom, students are provided with either reading or video
+Students will be provided with either reading or video
 material that they are expected to view/read prior to class. Classes will
 involve brief refreshers on new concepts followed by working on exercises in
 class that cover that concept. While students are working on exercises the
@@ -193,69 +182,14 @@ the installation of required software. If you don't have access to a laptop
 please contact the instructor and they will do their best to provide you with
 one.
 
-
-## UF Policies
-
-
-### University Policy on Accommodating Students with Disabilities
-
-Students requesting accommodation for disabilities must first register with the
-Dean of Students Office (http://www.dso.ufl.edu/drc/). The Dean of Students
-Office will provide documentation to the student who must then provide this
-documentation to the instructor when requesting accommodation. You must submit
-this documentation prior to submitting assignments or taking the quizzes or
-exams. Accommodations are not retroactive, therefore, students should contact
-the office as soon as possible in the term for which they are seeking
-accommodations.
-
-
-### University Policy on Academic Misconduct
-
-Academic honesty and integrity are fundamental values of the University
-community. Students should be sure that they understand the UF Student Honor
-Code at http://www.dso.ufl.edu/students.php.
-
-
-### Netiquette and Communication Courtesy
-
-All members of the class are expected to follow rules of common
-courtesy in all email messages, threaded discussions and chats.
-
-
-## Getting Help
-
-For issues with technical difficulties for E-learning in Canvas, please contact the UF Help Desk at:
-
-* Learning-support@ufl.edu
-* (352) 392-HELP - select option 2
-* https://lss.at.ufl.edu/help.shtml
-
-Any requests for make-ups due to technical issues MUST be accompanied by the
-ticket number received from LSS when the problem was reported to them. The
-ticket number will document the time and date of the problem. You MUST e-mail
-your instructor within 24 hours of the technical difficulty if you wish to
-request a make-up.
-
-Other resources are available at http://www.distance.ufl.edu/getting-help for:
-
-* Counseling and Wellness resources
-* Disability resources
-* Resources for handling student concerns and complaints
-* Library Help Desk support
-
-Should you have any complaints with your experience in this course please visit
-http://www.distance.ufl.edu/student-complaints to submit a complaint.
-
-Most importantly, if you are struggling for any reason please come talk to me
-and I will do my best to help.
-
+## STLCOP Policies
 
 ## Grading Policies
 
 Grading for this course will revolve around a combination of assignments (75%)
 and an independent project (25%).
 
-There will be 11 equally weighted assignments. One problem from each assignment
+All assignments will be equally weighted. One problem from each assignment
 (selected at the instructors discretion after the assignments have been
 submitted) will receive a thorough code review and a detailed grade. Other
 problems will be graded as follows:
@@ -289,7 +223,6 @@ the two.
 
 The details course schedule is available on the course website at:
 [{{ site.url }}/schedule]({{ site.baseurl }}/schedule).
-
 
 **Disclaimer:** This syllabus represents my current plans and objectives. As we
 go through the semester, those plans may need to change to enhance the class
