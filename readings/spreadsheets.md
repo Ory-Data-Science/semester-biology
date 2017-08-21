@@ -7,7 +7,7 @@ language: Excel
 
 * Introduction
 
-  *  [Reading](http://www.datacarpentry.org/sql-ecology-lesson/00-sql-introduction/)
+  *  [Reading](http://www.datacarpentry.org/spreadsheet-ecology-lesson/00-intro/)
 
 * Data Organization
 
