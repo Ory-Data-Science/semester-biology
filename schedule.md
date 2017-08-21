@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Assignment Schedule
-assignments: ['Introduction to Databases', 'Joins and Tidy Data',
-'Introduction to R and RStudio', 'Project Proposals', 'Working with Data', 
+assignments: ['Computer Setup', 'Introduction to Databases', 'Joins and Tidy Data',
+'Introduction to R and RStudio', 'Project Proposals', 'Working with Data',
 'Data Visualization', 'Programming Fundamentals 1', 'Extended Programming
 Fundamentals 1 (due to hurricane)', 'Programming Fundamentals 2', 'Knitr',
 'Working with Spatial Data','Working with Databases', 'Version Control Basics',
@@ -17,7 +17,7 @@ assignments are available as well. You can see the full list of
 outside of an organized course.
 
 <!-- Schedule Management
-- Update the `assignments:` list with `title:` from `assignments/` files. 
-- Add 'Template' to `assignments:` to view the course template from `docs/`. 
+- Update the `assignments:` list with `title:` from `assignments/` files.
+- Add 'Template' to `assignments:` to view the course template from `docs/`.
 - The remaining content should be left AS IS.
 -->
