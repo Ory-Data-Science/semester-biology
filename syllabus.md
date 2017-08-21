@@ -177,11 +177,10 @@ source software on those laptops (see [Setup]({{ site.baseurl }}/computer-setup)
 for installation instructions). Support will be provided by the instructor in
 the installation of required software.
 
-## STLCOP Policies
-
-# Academic and General Conduct, Academic Dishonesty
+## Academic and General Conduct, Academic Dishonesty
 Acts of academic dishonesty are outlined within the Academic Honor Code and Integrity Policy, which will be upheld to the highest standards in this course. For questions related to the Academic Honor Code and Integrity Policy, please contact the Academic Honor Code Committee co-chairs or the Dean of Arts and Sciences.
-# Special Accommodations:
+
+## Special Accommodations:
 If any student has a need for special testing arrangements, note-taking assistance, or other accommodations because of a documented disability, please feel free to discuss this with me privately. Rebecca Jones from the Student Affairs staff will need to evaluate and approve your accommodation needs.
 
 ## Correspondance & Social Media
