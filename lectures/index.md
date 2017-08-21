@@ -5,7 +5,7 @@ title: Lectures
 
 ### Excel
 
-* [Data Organization in Spreadsheets](data-entry)
+* [Data Organization in Spreadsheets](spreadsheets)
 
 ### SQL
 
