@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Assignment Schedule
-assignments: ['Computer Setup and Git Classrooms', 'Introduction to Databases',
-'Data Messiness and OpenRefine' 'Joins and Tidy Data', 'Introduction to R and
-RStudio', 'Project Proposals', 'Working with Data', 'Data Visualization',
-'Programming Fundamentals 1', 'Programming Fundamentals 2', 'Knitr', 'Working
-with Spatial Data','Working with Databases', 'Version Control Basics', 'Putting
-It All Together', 'Project Week(s)']
+assignments: ['Computer Setup and Git Classrooms', 'Data Organization in
+Spreadsheets', 'Data Messiness and OpenRefine', 'Introduction to Databases',
+'Joins and Tidy Data', 'Introduction to R and RStudio', 'Project Proposals',
+'Working with Data', 'Data Visualization', 'Programming Fundamentals 1',
+'Programming Fundamentals 2', 'Knitr', 'Working with Spatial Data','Working
+with Databases', 'Version Control Basics', 'Putting It All Together',
+'Project Week(s)']
 ---
 
 {% include assignments.html %}
