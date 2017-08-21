@@ -9,7 +9,7 @@ kramdown:
 permalink:        pretty
 
 # Setup
-title:            Data Carpentry -for- Pharmacists
+title:            Data Carpentry for Pharmacists
 description:      'Teaching the tools to get computers to do cool science'
 url:              http://drlabratory.github.io/semester-pharmacy
 baseurl:          /semester-pharmacy
