@@ -3,6 +3,10 @@ layout: page
 title: Lectures
 ---
 
+### Excel
+
+* [Data Organization in Spreadsheets](data-entry)
+
 ### SQL
 
 * [Introduction to Databases](SQL-intro)
@@ -24,4 +28,3 @@ title: Lectures
 ### Git
 
 * [Git with R](R-git)
-
