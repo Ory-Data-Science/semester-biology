@@ -3,7 +3,7 @@ layout: page
 title: Readings
 ---
 
-### Spreadsheets
+### Excel
 
 * [Data Organization in Spreadsheets](spreadsheets)
 
