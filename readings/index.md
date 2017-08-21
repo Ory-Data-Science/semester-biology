@@ -9,7 +9,7 @@ title: Readings
 
 ### OpenRefine
 
-* [Data Cleaning with Openrefine](openrefine)
+* [Data Cleaning with OpenRefine](openrefine)
 
 ### SQL
 
