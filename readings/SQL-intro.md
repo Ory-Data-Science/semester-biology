@@ -15,5 +15,5 @@ language: SQL
   * Filtering - [Video](https://www.youtube.com/watch?v=c3hoWxukrPE)
   * Sorting - [Video](https://www.youtube.com/watch?v=rNwwdijxxKs)
   * Nulls - [Video](https://www.youtube.com/watch?v=KLugfNdGNFw)
-  * Basic Queries - [Reading](http://www.datacarpentry.org/sql-ecology-lesson//01-sql-basic-queries.html)
-  * Aggregation - [Video](https://www.youtube.com/watch?v=ZjuL-pfkUOA) \| [Reading](http://www.datacarpentry.org/sql-ecology-lesson//02-sql-aggregation.html)
+  * Basic Queries - [Reading](http://www.datacarpentry.org/sql-ecology-lesson/01-sql-basic-queries/)
+  * Aggregation - [Video](https://www.youtube.com/watch?v=ZjuL-pfkUOA) \| [Reading](http://www.datacarpentry.org/sql-ecology-lesson/02-sql-aggregation/)
