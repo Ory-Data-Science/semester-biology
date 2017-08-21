@@ -6,9 +6,9 @@ title: Acknowledgments
 #### Primary Contributors
 
 Course materials and website design have been primarily developed and
-implemented by [Ethan White](http://ethanwhite.org) and [Zachary Brym](http://zackbrym.weecology.org/). This course is an effort to adapt their
+implemented by [Ethan White](http://ethanwhite.org) and [Zachary Brym](http://zackbrym.weecology.org/). This course is an effort by [Jeramia Ory](http://drlabratory.com) to adapt their
 materials to data more relevant to those in the Health Professions, specifically
-Pharmacy. See our [contributors page](https://github.com/datacarpentry/semester-biology/graphs/contributors) for more 
+Pharmacy. See our [contributors page](https://github.com/datacarpentry/semester-biology/graphs/contributors) for more
 details.
 
 #### Funding
