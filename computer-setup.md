@@ -5,6 +5,12 @@ title: Computer Setup
 
 ***CHEM 3352 / PGEL 4001 students will need their own laptops. We will set up all the required software the first day of class***
 
+### OpenRefine
+
+* Check that you have Firefox or Chrome browsers installed and set as your default browser. OpenRefine runs in your default browser. It will not run correctly in Internet Explorer.
+* Download software from http://openrefine.org
+* Unzip the downloaded file into a directory by right-clicking and selecting “Extract…”. Name that directory something like OpenRefine.
+
 ### SQL
 
 Download and install [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/). Add the [SQLite Manager](https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/).
