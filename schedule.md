@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Assignment Schedule
-assignments: ['Computer Setup & Git Classrooms', 'Introduction to Databases',
+assignments: ['Computer Setup and Git Classrooms', 'Introduction to Databases',
 'Data Messiness and OpenRefine' 'Joins and Tidy Data', 'Introduction to R and
 RStudio', 'Project Proposals', 'Working with Data', 'Data Visualization',
 'Programming Fundamentals 1', 'Programming Fundamentals 2', 'Knitr', 'Working
