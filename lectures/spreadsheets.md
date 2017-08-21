@@ -1,6 +1,6 @@
 ---
 layout: page
-element: notes
+element: lecture
 title: Data Organization in Spreadsheets
 language: Excel
 ---
