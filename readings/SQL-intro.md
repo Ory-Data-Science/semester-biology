@@ -7,7 +7,7 @@ language: SQL
 
 * Introduction
 
-  * Databases Intro - [Video](https://www.youtube.com/watch?v=kaKa6N9lEG8) \| [Reading](http://www.datacarpentry.org/sql-ecology-lesson//00-sql-introduction.html)
+  * Databases Intro - [Video](https://www.youtube.com/watch?v=kaKa6N9lEG8) \| [Reading](http://www.datacarpentry.org/sql-ecology-lesson/00-sql-introduction/)
 
 * Basic Queries
 
