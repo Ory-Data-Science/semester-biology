@@ -3,6 +3,14 @@ layout: page
 title: Readings
 ---
 
+### Spreadsheets
+
+* [Data Organization in Spreadsheets](spreadsheets)
+
+### OpenRefine
+
+*
+
 ### SQL
 
 * [Introduction to Databases](SQL-intro)
