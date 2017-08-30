@@ -1,22 +1,19 @@
 ---
 layout: page
 title: Syllabus
-catalog: WIS 6934
+catalog:  CHEM 3352 / PGEL 4001
 credits: 3
 semester: Fall 2017
-professor: Dr. Ethan White and Kristina Riemer
-office: Room 1 in Building 150 (just north of Newins-Zeigler)
-email: ethanwhite@ufl.edu
-phone: 352-294-2081
-schedule: ['Tuesdays, 4:05-4:55, 222 Newins-Ziegler Hall',
-           'Fridays, 11:45-1:40, 219 Newins-Ziegler Hall']
-office_hours: Monday 2-3:15 and Wednesday 11-12
-office_hours_location: Newins-Zeigler 203
-TA: Andrew Marx
-TA_email: andrewjmarx@ufl.edu
+professor: Dr. Jeramia Ory
+office: Jones 1544
+email: jeramia.ory@stlcop.edu
+phone: 314-446-8169
+schedule: ['Monday 1:00-2:50 & Wednesday 12:00 - 12:50 ARB 222']
+appointment_url: http://drlabratory.com/calendar/schedule-appointment/
+office_hours: By appointment
 ---
 
-## {{ site.title }} 
+## {{ site.title }}
 
 {{ page.catalog }}, {{ page.credits }} Credits, {{ page.semester }}
 
@@ -34,8 +31,6 @@ Phone: {{ page.phone }}
 
 ### Times & Location
 
-**Note: class is in different locations depending on the day of the week**
-
 {% for class in page.schedule %}
   {{ class }}
 {% endfor %}
@@ -47,17 +42,15 @@ Times: {{ page.office_hours }}
 
 Location: {{ page.office_hours_location }}
 
-Or by appointment. *Note: my schedule gets very busy during the semester so
-please try to schedule appointments as far in advance as possible. In general it
-will be very difficult to set up appointments less than 24 hours in advance.*
+Appointments: [Click here to schedule an appointment]({{page.appointment_url}})
 
-
-### Course TA
-
-{{ page.TA }}
-
-Email: [{{ page.TA_email }}](mailto:{{ page.TA_email }})
-
+*Note: my schedule gets busy during the semester, and I've had bad luck setting
+office hours that students show up to. I have an open door policy, so please
+feel free to stop by at any time. However, if you want to make sure I'll be in
+my office, I've cleared 12 hours during the week that are available to make
+appointments.  Please try to schedule appointments as far in advance as
+possible. In general it will be very difficult to set up appointments less than
+24 hours in advance.*
 
 ### Website
 
@@ -78,7 +71,7 @@ There is no required text book for this class.
 
 
 ### Course Description
- 
+
 Computers are increasingly essential to the study of all aspects of
 biology. Data management skills are needed for entering data without errors,
 storing it in a usable way, and extracting key aspects of the data for
@@ -88,14 +81,13 @@ introduction to data management, manipulation, and analysis, with an emphasis on
 biological problems. Class will typically consist of short introductions or
 question & answer sessions, followed by hands on computing exercises. The course
 will be taught using R and SQLite, but the concepts learned will easily apply to
-all programming languages and database management systems. No background in
-programming of databases is required.
+all programming languages and database management systems. *No background in
+programming of databases is required.*
 
 
 ### Prerequisite Knowledge and Skills
 
-Knowledge of basic biology.
-
+Knowledge of basic biology and chemistry.
 
 ### Purpose of Course
 
@@ -115,7 +107,7 @@ Students completing this course will be able to:
 * Extract information from databases
 * Write simple computer programs in R
 * Automate data analysis
-* Apply these tools to address biological questions
+* Apply these tools to address biological or pharmaceutical questions
 * Apply general data management and analysis concepts to other programming
   languages and database management systems
 
@@ -131,29 +123,19 @@ time will be provided for working on projects.
 
 Get more details about the project from the [Projects Introduction]({{ site.baseurl}}/materials/projects).
 
-### How this course relates to the Student Learning Outcomes in Wildlife Ecology and Conservation
-
-This course contributes to the 'Quantitative Skills' and 'Conducting and
-Analyzing Independent/Original Research' Student Learning Outcomes specified in
-the
-[Ph.D. and MS in Wildlife Ecology and Conservation Academic Assessment Plans](http://assessment.aa.ufl.edu/Data/Sites/22/media/2013-14gaap/cals/2013-14-cals-wildlife-ecol-and-consvn-phd-aap.pdf),
-by providing students the skills and knowledge they need to manage and analyze
-the data used in research.
-
-
 ### Teaching Philosophy
 
-This class is taught using a flipped, learner-centered, approach, because
-learning to program and work with data requires actively working on
-computers. Flipped classes work well for all kinds of content, but I think they
-work particularly well for computer oriented classes. If you're interested in
-knowing more take a look at this great
+This class will be taught using a mix of short, introductory lectures and a more
+flipped, learner-centered approach. Learning to program and work with data
+requires actively working on computers. Flipped classes work well for all kinds
+of content, but I think they work particularly well for computer oriented
+classes. If you're interested in knowing more take a look at this great
 [info-graphic](http://www.knewton.com/flipped-classroom-2/).
 
 
 ### Instructional Methods
 
-As a flipped classroom, students are provided with either reading or video
+Students will be provided with either reading or video
 material that they are expected to view/read prior to class. Classes will
 involve brief refreshers on new concepts followed by working on exercises in
 class that cover that concept. While students are working on exercises the
@@ -168,17 +150,15 @@ minute demonstrations on the concepts followed by time to work on exercises.
 ## Course Policies
 
 
-### Attendance Policy
-
-Attendance will not be taken or factor into the grades for this class. However,
-experience suggests that students who regularly miss class struggle to learn the
-material.
-
 
 ### Quiz/Exam Policy
 
 There are no quizzes or exams in this course.
 
+### Attendance
+Attendance in highly suggested, the material covered builds on previously discussed information. Please do not expect to be able to put off your reading for three weeks and magically understand everything in one crash study session. I will not provide handouts for a missed class without a formal excuse. There are always legitimate excuses for missing class, however, the definition of “legitimate” is at the discretion of the Dean. As per STLCOP policy:
+
+>“The School of Pharmacy expects student pharmacists to be present for course activities at which attendance is required as noted on a course schedule or syllabus, and to be present for all course-related assessments (e.g., exams, quizzes, case presentations, practicums, etc.).  This is necessary to allow efficient and effective teaching of course material and active learning during class sessions, to show respect for instructors, and to ensure the security of examinations, quizzes, and other types of student assessments. However, the School of Pharmacy also recognizes that there are occasions when student pharmacist attendance at these activities is not possible or prudent. The attached policy is intended to inform P1-P3 student pharmacists of how absence requests and approvals will be processed.  Starting today, all P1-P3 student pharmacists are expected to follow this policy when submitting requests for excused absences from class sessions.  Please note that as stated in the policy, for expeditious processing, requests for excused absences should be directed via email to the Dean’s Office mailbox – not to the Dean of Pharmacy. Emails directed to Dean Canaday, Dean of Pharmacy, may take up to an additional 3 – 5 days for processing.”
 
 ### Make-up policy
 
@@ -195,11 +175,10 @@ last minute you should already be close to done with the assignment. This policy
 also allows rapid feedback to be provided to students by returning assignments
 quickly.
 
-
 ### Assignment policy
 
-Assignments are due Monday night by 11:59 pm Eastern Time. Assignments should be
-submitted via Canvas.
+Assignments are due by 11:59 pm Central Time. Assignments should be
+submitted via either Github or Moodle.
 
 
 ### Course Technology
@@ -207,65 +186,19 @@ submitted via Canvas.
 Students are required to provide their own laptops and to install free and open
 source software on those laptops (see [Setup]({{ site.baseurl }}/computer-setup)
 for installation instructions). Support will be provided by the instructor in
-the installation of required software. If you don't have access to a laptop
-please contact the instructor and they will do their best to provide you with
-one.
+the installation of required software.
 
+## Academic and General Conduct, Academic Dishonesty
+Acts of academic dishonesty are outlined within the Academic Honor Code and Integrity Policy, which will be upheld to the highest standards in this course. For questions related to the Academic Honor Code and Integrity Policy, please contact the Academic Honor Code Committee co-chairs or the Dean of Arts and Sciences.
 
-## UF Policies
+## Special Accommodations:
+If any student has a need for special testing arrangements, note-taking assistance, or other accommodations because of a documented disability, please feel free to discuss this with me privately. Rebecca Jones from the Student Affairs staff will need to evaluate and approve your accommodation needs.
 
-
-### University Policy on Accommodating Students with Disabilities
-
-Students requesting accommodation for disabilities must first register with the
-Dean of Students Office (http://www.dso.ufl.edu/drc/). The Dean of Students
-Office will provide documentation to the student who must then provide this
-documentation to the instructor when requesting accommodation. You must submit
-this documentation prior to submitting assignments or taking the quizzes or
-exams. Accommodations are not retroactive, therefore, students should contact
-the office as soon as possible in the term for which they are seeking
-accommodations.
-
-
-### University Policy on Academic Misconduct
-
-Academic honesty and integrity are fundamental values of the University
-community. Students should be sure that they understand the UF Student Honor
-Code at http://www.dso.ufl.edu/students.php.
-
-
-### Netiquette and Communication Courtesy
-
-All members of the class are expected to follow rules of common
-courtesy in all email messages, threaded discussions and chats.
-
-
-## Getting Help
-
-For issues with technical difficulties for E-learning in Canvas, please contact the UF Help Desk at:
-
-* Learning-support@ufl.edu 
-* (352) 392-HELP - select option 2
-* https://lss.at.ufl.edu/help.shtml 
-
-Any requests for make-ups due to technical issues MUST be accompanied by the
-ticket number received from LSS when the problem was reported to them. The
-ticket number will document the time and date of the problem. You MUST e-mail
-your instructor within 24 hours of the technical difficulty if you wish to
-request a make-up.
-
-Other resources are available at http://www.distance.ufl.edu/getting-help for:
-
-* Counseling and Wellness resources
-* Disability resources
-* Resources for handling student concerns and complaints
-* Library Help Desk support
-
-Should you have any complaints with your experience in this course please visit
-http://www.distance.ufl.edu/student-complaints to submit a complaint.
-
-**Most importantly, if you are struggling for any reason please come talk to me
-and I will do my best to help.**
+## Correspondance & Social Media
+* My typical turnaround for e-mail is 24 hours. If you don’t get an answer after 24 hours please email me again, it may have disappeared from my focus.
+* I’m fairly active on twitter, my handle is DrLabRatOry. Feel free to follow (or not), but I don’t follow students back until after graduation. If you want to get to know me and my (dry, horrible, influenced by countless bad 80’s movies) sense of humor, this is probably the best way.
+* If you can ask me a question in 140 characters or less, use twitter and tag it #CHEM3320 so others in the class can find it. I’ll probably get back sooner than 24 hours. If people want to live tweet lectures, that’s fine as long as you tag it #CHEM3320.
+* I am on facebook, but I do not friend students until they have graduated from the college.
 
 
 ## Grading Policies
@@ -273,7 +206,7 @@ and I will do my best to help.**
 Grading for this course will revolve around a combination of assignments (75%)
 and an independent project (25%).
 
-There will be 11 equally weighted assignments. One problem from each assignment
+All assignments will be equally weighted. One problem from each assignment
 (selected at the instructors discretion after the assignments have been
 submitted) will receive a thorough code review and a detailed grade. Other
 problems will be graded as follows:
@@ -307,7 +240,6 @@ the two.
 
 The details course schedule is available on the course website at:
 [{{ site.url }}/schedule]({{ site.baseurl }}/schedule).
-
 
 **Disclaimer:** This syllabus represents my current plans and objectives. As we
 go through the semester, those plans may need to change to enhance the class

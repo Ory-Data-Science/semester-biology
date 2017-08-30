@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Assignment Schedule
-assignments: ['Data Entry and Storage', 'Database Queries',
-'Introduction to R and RStudio', 'Working with Data', 'Data Visualization',
-'Projects Version Control and Structure', 'Project Week', 'Working with Spatial Data',
-'Working with Spatial Data 2', 'Programming Fundamentals 1',
-'Programming Fundamentals 2', 'Project Week', 'Working with Databases',
-'Knitr', 'Project Week', 'Project Week']
+assignments: ['Computer Setup and Git Classrooms', 'Data Organization in
+Spreadsheets', 'Data Cleaning with OpenRefine', 'Introduction to Databases',
+'Joins and Tidy Data', 'Introduction to R and RStudio', 'Project Proposals',
+'Working with Data', 'Data Visualization', 'Programming Fundamentals 1',
+'Programming Fundamentals 2', 'Knitr', 'Working with Spatial Data','Working
+with Databases', 'Version Control Basics', 'Putting It All Together',
+'Project Week(s)']
 ---
 
 {% include assignments.html %}
@@ -17,7 +18,7 @@ assignments are available as well. You can see the full list of
 outside of an organized course.
 
 <!-- Schedule Management
-- Update the `assignments:` list with `title:` from `assignments/` files. 
-- Add 'Template' to `assignments:` to view the course template from `docs/`. 
+- Update the `assignments:` list with `title:` from `assignments/` files.
+- Add 'Template' to `assignments:` to view the course template from `docs/`.
 - The remaining content should be left AS IS.
 -->

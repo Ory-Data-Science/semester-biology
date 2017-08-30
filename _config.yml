@@ -9,16 +9,17 @@ kramdown:
 permalink:        pretty
 
 # Setup
-title:            Data Carpentry for Biologists
+title:            Data Carpentry for Pharmacists
 description:      'Teaching the tools to get computers to do cool science'
-url:              http://www.datacarpentry.org/semester-biology
-baseurl:          /semester-biology
-email:            datacarpentrysemester@weecology.org
-feedbackurl:      polleverywhere.com/multiple_choice_polls/KznOEBvSAnahmt7
+url:              http://drlabratory.github.io/semester-pharmacy
+baseurl:          /semester-pharmacy
+email:            jeramia.ory@stlcop.edu
+
+feedbackurl:      https://docs.google.com/forms/d/e/1FAIpQLScH2vEgrsV6OiDwCYBgLpkbwzfVvQx2gSNxth-3CNmgOo9NHg
 author:
-  name:           'Ethan White'
-  url:            https://twitter.com/ethanwhite
+  name:           'Jeramia Ory'
+  url:            https://twitter.com/drlabratory
 
 github:
-  repo:           https://github.com/datacarpentry/semester-biology
+  repo:           https://github.com/drlabratory/semester-pharmacy
   #               Be sure the 'Issues' feature is activated in 'Settings'

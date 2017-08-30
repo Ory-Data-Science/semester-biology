@@ -3,6 +3,14 @@ layout: page
 title: Readings
 ---
 
+### Excel
+
+* [Data Organization in Spreadsheets](spreadsheets)
+
+### OpenRefine
+
+* [Data Cleaning with OpenRefine](openrefine)
+
 ### SQL
 
 * [Data Entry and Storage](SQL-data)
