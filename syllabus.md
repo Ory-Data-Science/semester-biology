@@ -23,8 +23,8 @@ office_hours: By appointment
 
 Office: {{ page.office }}
 
-Email (best way to contact us):
-[{{ page.email }}](mailto:{{ page.email }}), [kristina.riemer@ufl.edu](mailto:kristina.riemer@ufl.edu)
+Email (best way to contact me):
+[{{ page.email }}](mailto:{{ page.email }})
 
 Phone: {{ page.phone }}
 
@@ -177,9 +177,8 @@ quickly.
 
 ### Assignment policy
 
-Assignments are due by 11:59 pm Central Time. Assignments should be
-submitted via either Github or Moodle.
-
+Assignments are generally due by the start of the next class, and will be
+specified on the Github Classrooms assignment.
 
 ### Course Technology
 
