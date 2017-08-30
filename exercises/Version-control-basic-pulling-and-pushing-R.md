@@ -8,13 +8,14 @@ language: R
 This is a follow up to
 [Pushing Changes]({{ site.baseurl }}/exercises/Version-control-basic-pushing-changes-R).
 
-**STOP: Wait until your teacher has told you they've updated your repository 
-following the last exercise before doing this one.**
+**STOP: Make sure you sent your teacher an email following the last exercise
+with a link to your Github repository and wait until your teacher has told you
+they've updated your repository before doing this one.**
 
 While you were working on your vectorized GC-content function, Dr. Granger (*who
-has suddenly developed some pretty impressive computational skills*) has been
-writing a ***vectorized ear length categorizer***. To get it you'll need to `pull` the
-most recent changes from Github.
+has suddenly developed some pretty impressive computational skills*) wrote some
+code to generate a `data.frame` with `dplyr`. To get it you'll need to `pull`
+the most recent changes from Github.
 
 1. On the `Git` tab click on the `Pull` button with the blue arrow. You should
    see some text that looks like:
@@ -30,18 +31,20 @@ most recent changes from Github.
    ```
 
 2. Click `OK`.
-3. You should see the new function in your repository.
+3. You should see the new lines of code in your `houseelf-analysis.R.
 
    ```
-   get_size_class <- function(ear_length){
-      # Calculate the size class for one or more earth lengths
-      ear_lengths <- ifelse(ear_length > 10, "large", "small")
-      return(ear_lengths)
-   }
+   library(dplyr)
+   
+   data_size_class <-
+     data %>% 
+     rowwise() %>% 
+     transmute(id = id, earlengthcat = get_ear_len_cat(earlength, 10))
    ``` 
 
-4. Write some new code that creates a data frame with information about the
-  individual ID, the earth length class, and the gc-content for each individual.
-5. Save this data frame as a `csv` file using `write.csv()`
-6. Commit the new code and the resulting `csv` file and push the results to
+4. Modify the code to add a `gccontent` column to the `data.frame` that includes
+   the `id` and `earlengthcat` for each individual. The `gccontent` column
+   should hold the results of your GC-content function.
+5. Save this data frame as a `CSV` file using `write.csv()`
+6. Commit the new code and the resulting `CSV` file and push the results to
    Github.

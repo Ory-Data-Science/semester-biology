@@ -12,6 +12,13 @@ language: SQL
 
 > Introduce the Portal Project database
 
+### Database Queries
+
+* Data is separate from manipulations of the data
+* Tables - store the data
+* Queries - store questions about the data
+    * If we update the data, the query asks the same question of the new data.
+
 ### Selecting columns
 
 * Choose which columns to return.
@@ -57,7 +64,7 @@ SELECT species_id, ROUND(hindfoot_length/1000.0, 2)
 FROM surveys;
 ```
 
-> Do [Exercise 2 - SELECT]({{ site.baseurl }}/exercises/Basic-queries-select-SQL).
+> Do [Exercise 1 - SELECT]({{ site.baseurl }}/exercises/Basic-queries-select-SQL).
 > Don't worry if you don't know how to save it yet, we'll cover that in a
 > minute.
 
@@ -73,14 +80,14 @@ SELECT species_id, ROUND(hindfoot_length/1000.0, 2)
 FROM surveys;
 ```
 
-> Save the results of Exercise 2 as a new view.
+> Save the results of Exercise 1 as a new view.
 
 
 ### Filtering
 
 * Use `WHERE` to select only the rows meeting certain criteria.
-    * Follow `WHERE` with conditional statement
-        * Conditional operator links column and condition
+    * Follow `WHERE` with a conditional statement
+        * General form: column, condition, value
         
         `=`       | equals
         `>`  `<`  | greater / less than
@@ -120,19 +127,19 @@ WHERE species_id = 'DS' AND year > 1990
 
 * If you want only NULL values, use `IS NULL` instead
 
-> Do [Exercise 3 - WHERE]({{ site.baseurl }}/exercises/Basic-queries-where-SQL).
+> Do [Exercise 2 - WHERE]({{ site.baseurl }}/exercises/Basic-queries-where-SQL).
 
 
 ### Style
 
-* SQL generally doesn't care about capitalization for line breaks. So it will
-run a query like this.
+* SQL generally doesn't care about capitalization or line breaks. So it will run
+a query like this.
 
 ```
 seLEcT year, MONTH, dAY, WEIght FrOm SURveyS wheRe hindfoot_LENGTH > 30 aND spECIes_ID = 'DM';
 ```
 
-* This is difficult to read so we follow style of writing SQL code
+* This is difficult to read so we follow style rules for writing SQL code
     * Capitalize SQL commands
     * Lowercase variable names
 	* One clause/line
@@ -164,7 +171,7 @@ FROM species
 ORDER BY taxa, genus, species;
 ```
 
-> Do [Exercise 4 - ORDER BY]({{ site.baseurl }}/exercises/Basic-queries-order-by-SQL).
+> Do [Exercise 3 - ORDER BY]({{ site.baseurl }}/exercises/Basic-queries-order-by-SQL).
 
 
 ### Comments

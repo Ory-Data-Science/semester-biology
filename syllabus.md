@@ -23,8 +23,8 @@ office_hours: By appointment
 
 Office: {{ page.office }}
 
-Email (best way to contact me):
-[{{ page.email }}](mailto:{{ page.email }})
+Email (best way to contact us):
+[{{ page.email }}](mailto:{{ page.email }}), [kristina.riemer@ufl.edu](mailto:kristina.riemer@ufl.edu)
 
 Phone: {{ page.phone }}
 
@@ -40,7 +40,7 @@ Phone: {{ page.phone }}
 
 Times: {{ page.office_hours }}
 
-Location: {{ page.office }}
+Location: {{ page.office_hours_location }}
 
 Appointments: [Click here to schedule an appointment]({{page.appointment_url}})
 
@@ -111,6 +111,17 @@ Students completing this course will be able to:
 * Apply general data management and analysis concepts to other programming
   languages and database management systems
 
+### Course Project
+
+Projects offer an opportunity to work with bigger data-related computing tasks
+and learn specific computing tools you need for your research. Projects can
+involve programming, databases, or both. They should be on
+something you are excited about.
+
+As a rough guideline projects should represent ~30-40 hours of work. Some class
+time will be provided for working on projects.
+
+Get more details about the project from the [Projects Introduction]({{ site.baseurl}}/materials/projects).
 
 ### Teaching Philosophy
 

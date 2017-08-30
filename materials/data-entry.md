@@ -18,13 +18,14 @@ protection against bad data being entered
 * Be careful of data conversion issues from spreadsheets
 
 > Show posts/papers on dates and gene names
-> * https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7
-> * https://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/
+>
+> * [https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7)
+> * [https://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/](https://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/)
 
 ### Quality Assurance
 
 * Stopping bad data from ever being entered
-* Let's us set rules about what values can be entered into a column
+* Set rules about what values can be entered into a column
 
 * Select an area of cells, most often a column
 * `Data -> Data Validation`
@@ -33,13 +34,15 @@ protection against bad data being entered
     * Use `Data` to set the type of limitation: `between` 
     * Then use additional boxes to provide specifics: `1` and `10`
 * Add a message to explain what goes in a cell in `Input Message`
-* Add a useful error message using `Error Alert
+* Add a useful error message using `Error Alert`
 
 * Make lists of choices
     * `Allow` = `List`
     * Enter list values in `Sources`: DM, DO, DS, PP, PM
 
-> Demo a data entry form in Access or Google Forms
+> Demo a data entry form in Excel or Google Forms
+
+> Do [Exercise 2 - Data Entry Validation in Excel]({{ site.baseurl }}/exercises/Qaqc-data-entry-validation-in-excel-SQL/).
 
 ### Quality Control
 

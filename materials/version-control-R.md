@@ -5,39 +5,37 @@ title: Version Control
 language: R
 --- 
 
-> Remind students to setup a GitHub account and email the instructor their
-> username.
+> Before class
+>
+> * Remind students to setup a GitHub account and email the instructor their
+>   username. 
+> * Setup class organization at Github. 
+> * Add students' username to organization with "create repo" permissions and
+>   respond with link to organization in email.
 
-> Arrange to have a teaching partner attend class and `push` the following code 
-> for the 'Collaborating' demo.
-
-> **Students need 2 projects to follow along with live coding.**
-> **Must switch projects when shifting from live coding to exercises**
+> For class
+> 
+> * Download [`houseelf-earlength-dna-data.csv`]({{ site.baseurl }}/data/houseelf-earlength-dna-data.csv).
+> * Arrange to have a teaching partner attend class and `push` the following
+>   code for the 'Collaborating' demo.
 
 ```
-get_size_class_ts_data <- function(df){
-  # Convert individual data to time-series data for each of a set of size classes
-  # Input: data frame with a year column for time
-  #        and a size_class column
-  ts_data <-
-    df %>% 
-    group_by(year, size_class) %>% 
-    summarize(counts = n())
-  return(ts_data)
-}
+library(dplyr)
 
-plot_ts_data <- function(df){
-  # Plot time-series data by size class
-  # Input: data frame with year, size_class, and counts columns
-  ggplot(df, aes(x = year, y = counts, color = size_class)) +
-    geom_line()
-}
+data_size_class <-
+  data %>% 
+  rowwise() %>% 
+  transmute(id = id, earlengthcat = get_size_class(earlength, 10))
 ```
 
-> Open the following links in a browser and zoom in to make the images fill the screen.
+> * Open the following links in a browser and zoom in to make the images fill
+>   the screen.
 >
 > > * [Like this?](http://www.phdcomics.com/comics/archive.php?comicid=1531)
 > > * [Or like this?](http://www.phdcomics.com/comics/archive.php?comicid=1323)
+
+> 
+> **Live coding demo parallels assignment.**
 
 ## Introduction
 
@@ -64,65 +62,83 @@ data files and code in a more manageable way.
         * See what changes others have made
         * Everyone has the most recent version of everything
 
-## Version control using RStudio & Git
+## Version control using Git & RStudio
 
-### Getting started
+### Create a Git repo
 
-1. File -> New Project -> New Directory -> Empty Project
-2. Choose where to put your project.
-3. Select `Create a git repository`.
-4. Check to make sure you have a you have a `Git` tab in the upper right window.
+1. Navigate to Github in a web browser and login.
+2. Click the `+` at the upper right corner of the page that shows the words
+   `Create  new...` when you hover over it and choose `New repository`.
+3. Choose the class organization (e.g., `dcsemester`) as the `Owner` of the
+   repo.
+4. Fill in a `Repository name` that follows the form `FirstnameLastname`.
+5. Select `Private`.
+6. Select `Initialize this repository with a README`.
+7. Click `Create Repository`.
 
-#### Tell git who you are
+### Connect to the Git repo in RStudio
 
-* Click on gear icon
-* Select `Shell`
-
-```
-git config --global user.name 'Ethan White'
-git config --global user.email 'ethan@weecology.org'
-git config --global --list
-```
+1. File -> New Project -> New Directory -> Version Control -> Git
+2. Navigate to your new Git repo -> Click the `Clone or download` button ->
+   Click the `Copy to clipboard` button.
+3. Paste the `Repository URL:` *A suggested `Project directory name:` should be
+   automatically generated*.
+4. Choose where to `Create project as subdirectory of:`.
+5. Click `Create Project`.
+6. Check to make sure you have a `Git` tab in the upper right window.
 
 > Do [Exercise 1 - Set-up Git]({{ site.baseurl }}/exercises/Version-control-basic-set-up-git-R/).
 
-### First commit
 
-*The following example uses the code from the problem decomposition lecture.*
+### First commits
+
+*The following example uses the code from the [Data Management Review]({{ site.baseurl }}/exercises/Basic-data-management-review-R) exercise.*
+
+#### Commit data
+
+* Download the data file [`houseelf-earlength-dna-data.csv`]({{ site.baseurl }}/data/houseelf-earlength-dna-data.csv) to your project directory.
+* Git -> Select `houseelf-earlength-dna-data.csv`.
+* Commit with message. 
+    * `"Add earlength data of houseelves"`
+* History: 
+    * One commit
+    * Changes too large to see
+
+#### Commit R script
 
 * Create a new file. 
-    * `large-small-ts-analysis.R`
+    * `houseelf-analysis.R`
 * Add some code to the file.
     * `get_data()`
 
 ```
 get_data <- function() {
-  data <- read.csv("surveys.csv")
+  data <- read.csv("houseelf-earlength-dna-data.csv")
   return(data)
 }
 
 data <- get_data()
 ```
 
-* Git -> Select `large-small-ts-analysis.R`. 
+* Git -> Select `houseelf-analysis.R`. 
     * Changes in staged files will be included in next commit.
     * Can also see changes by selecting `Diff`
 * Commit with message. 
-    * `"Start project comparing dynamics of different sized rodents"`
+    * `"Start script comparing earlength and DNA of houseelves"`
 * History: 
-    * One commit
-    * See what changes where made
+    * Two commits
+    * See what changes where made to `houseelf-analysis.R`
 
 ### Building a history
 
-* `large-small-ts-analysis.R` doesn't currently show on the `Git` tab
+* `houseelf-analysis.R` doesn't currently show on the `Git` tab
     * No saved changes since last commit
-* Add some more code to `large-small-ts-analysis.R`.
+* Add some more code to `houseelf-analysis.R`.
     * `get_size_class()`
 
 ```
-get_size_class <- function(weight) {
-  if (weight > 50){
+get_size_class <- function(earlength){
+  if (earlength > 10){
     size_class = "large"
   } else {
     size_class = "small"
@@ -131,23 +147,24 @@ get_size_class <- function(weight) {
 }
 ```
 
-* Save `large-small-ts-analysis.R`.
+* Save `houseelf-analysis.R`.
 * Now we see the file on the `Git` tab.
     * `M` indicates that it's been modified.
 * To commit these changes, we need to stage the file.
-    * Check the box next to `large-small-ts-analysis.R`.
+    * Check the box next to `houseelf-analysis.R`.
 * Commit with message.
     * `"Add function for determining size class"`
 * History: 
-    * Two commits 
-    * Each commit shows the additions we made in that commit.
+    * Three commits 
+    * Each `houseelf-analysis.R` commit shows the additions we made in
+      that commit.
 
-* Modify the code in `large-small-ts-analysis.R` 
+* Modify the code in `houseelf-analysis.R` 
     * Add `threshold` to `if()` in `get_size_class()`. 
 
 ```
-get_size_class <- function(weight, threshold){
-  if (weight > threshold){
+get_size_class <- function(earlength, threshold){
+  if (earlength > threshold){
     size_class = "large"
   } else {
     size_class = "small"
@@ -165,15 +182,17 @@ get_size_class <- function(weight, threshold){
         * The new version of the line is shown as added.
 
 
-> Do [Exercise 2 - First Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R/).
+> Do [Exercise 2 - First Commit]({{ site.baseurl }}/exercises/Version-control-basic-first-commit-R/),
+> [Exercise 3 - Importing Data]({{ site.baseurl }}/exercises/Version-control-basic-importing-data-R/),
+> and [Exercise 4 - Commit Multiple Files]({{ site.baseurl }}/exercises/Version-control-basic-commit-multiple-files-R/).
 
 ### Git as a time machine
 
-* Experiment with impunity
+#### Experiment with impunity
 
 ```
-get_size_class <- function(weight, threshold){
-  if (weight > threshold){
+get_size_class <- function(earlength, threshold){
+  if (earlength > threshold){
     size_class = 1
   } else {
     size_class = 2
@@ -183,10 +202,17 @@ get_size_class <- function(weight, threshold){
 ```
 
 * `Save` and show changes are staged
-* `More` -> `Revert`
+* <i class="fa fa-gear"></i> `More` -> `Revert` -> `Yes`
 
 * Get previous state of a file
     * `History` -> select commit -> `View file @ ...`
+
+#### Delete with impunity
+
+* Close the upper left window with the `houseelf-analysis.R`.
+* Choose the `File` tab in the lower right window.
+* Select `houseelf-analysis.R` -> `Delete` -> `Yes`
+* <i class="fa fa-gear"></i> `More` -> `Revert` -> `Yes`
 
 ## GitHub Remotes
 
@@ -194,59 +220,77 @@ get_size_class <- function(weight, threshold){
 
 * So far we've worked with a local `Git` repository.
 * One of the big benefits of version control is easy collaboration.
-* To do this, we synchronize our local changes with a `remote` repository.
-* We'll use GitHub. 
+* To do this, we synchronize our local changes with a remote repository called
+  `origin`.
+* Our remote repository is on GitHub. 
     * By far the most popular hosted version control site
     * Public and private hosted repositories
     * Private free for students and academics
-        * For the assignment, we'll use private repositories that I'll make for you.
-
-### Add a remote
-
-* Make a new `Git` repository ( *Students should have been assigned one.* )
-* Copy remote adding code from GitHub.
-    * `git remote add origin https://github.com/user/repo.git`
-* <i class="fa fa-gear"></i> -> Shell
-* Paste lines from GitHub -> Enter
-* See files on GitHub
-* Show browsing repo in past
-
-> Do [Exercise 5 - Adding a Remote]({{ site.baseurl }}/exercises/Version-control-basic-adding-a-remote-R/).
+	* https://education.github.com/
+        * For the assignment, we're using private repositories that we made at
+          the beginning.
 
 ### Push to a remote
 
-* Add `add_size_classes()`.
+* `Push` sends your recent commits to the `origin` remote.
 
-```
-add_size_classes <- function(df) {
-  # Add size class data to a data frame
-  # Input: data frame with weight column containing size information
-  data_size_class <-
-    df %>% 
-    na.omit() %>% 
-    rowwise() %>% 
-    mutate(size_class = get_size_class(weight, 50))
-  return(data_size_class)
-}
-```
+> Draw push arrow on diagram on board from local to `origin`.
 
-* Commit
-    * Show on local, not remote
-* Push
-    * Show on remote
+* Before a `Push` your commits show in your local history but not on the remote.
+
+> Show local commit history and lack of history in remote.
+
+* To `Push` to your remote, select the `Push` button at the top of the `Git`
+  tab.
+* Now your changes and commit history are also stored on the remote.
+
+> Show local commits now on `origin`.
+
 
 > Do [Exercise 6 - Pushing Changes]({{ site.baseurl }}/exercises/Version-control-basic-pushing-changes-R/).
+
+> Have students email a link to their repo to their instructor once they have
+> finished Pushing Changes
+>
+> The instructor should then commit the following code to their repo
+> with the commit message: "Generate data frame with id and earlength class"
+
+```
+library(dplyr)
+
+data_size_class <-
+  data %>% 
+  rowwise() %>% 
+  transmute(id = id, earlengthcat = get_size_class(earlength, 10))
+```
 
 ### Collaborating
 
 * Big advantage to remotes is easy collaboration
-* Avoids emailing files and shared folders where you are never sure if you actually have the most recent version
+* Avoids emailing files and shared folders where you are never sure if you
+  actually have the most recent version
 * Makes it easy to see what collaborators have done
-* While I've been talking, one of my collaborators has finished adding the other
-functions we need.
+* Automatically combines non-overlapping changes
+* While I've been talking, Dr. Granger has finished adding some code that we
+  need to put our results into a data frame.
 
-* Pull
-* Show history
-* Run code
+> Show `origin` with collaborator commit.
+
+> Add collaborator local repo to diagram and `pull` arrow from `origin` to
+> locals.
+ 
+* `Pull` the changes from the remote repo with the `Pull` button on the Git tab
+
+> Show updates to history following `Pull` and run code
 
 > Do [Exercise 7 - Pulling and Pushing]({{ site.baseurl }}/exercises/Version-control-basic-pulling-and-pushing-R/).
+
+* Collaborating on Github can get more complex with "forks" and "branches.
+
+> *Optional*: Redraw diagram with local, `origin`, and `upstream`. Arrows from
+> `origin` to/from `upstream` are pull requests and merges.
+
+> Show an [example of a working repository]({{ site.github.repo }}) with
+> branches and forks. Navigate to pull requests.
+
+

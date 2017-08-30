@@ -13,8 +13,8 @@ title: Readings
 
 ### SQL
 
-* [Introduction to Databases](SQL-intro)
-* [Database Structure and Joins](SQL-joins)
+* [Data Entry and Storage](SQL-data)
+* [Database Queries](SQL-queries)
 
 ### R
 

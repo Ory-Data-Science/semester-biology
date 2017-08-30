@@ -1,28 +1,34 @@
 # Data Carpentry for Biologists - Semester Course
 
+[![DOI](https://zenodo.org/badge/31911336.svg)](https://zenodo.org/badge/latestdoi/31911336)
+
 This is a [forkable](https://help.github.com/articles/fork-a-repo/) set of teaching materials for teaching biologists how to work
 with data through programming, database management and computing more generally.
 
 This repository contains the complete teaching materials (excluding exams and
 answers to assignments) and [website](http://datacarpentry.org/semester-biology) for a university style and self-guided 
-course teaching computational data skills to biologists. 
+course teaching computational data skills to biologists. The course is designed
+to work primarily as a flipped classroom, with students reading and viewing
+videos before coming to class and then spending the bulk of class time working
+on exercises with the teacher answering questions and demoing the concepts.
 
 [Helpful information](http://www.datacarpentry.org/semester-biology/docs/) 
-is available regarding the structure and function of the course and website materials,
-as well as customization and delivery of the course.
-
-The course is designed to work primarily as a flipped classroom, with students
-reading and viewing videos before coming to class and then spending the bulk of
-class time working on exercises with the teacher answering questions and demoing
-the concepts.
+is available regarding the structure and function of the course and website
+materials for customized development and delivery of the course.
 
 We encourage collaborative development. This repository was used by 
-@ethanwhite to teach a version of this course (Fall 2015) at the University of
-Florida. Some materials remain under active development. Materials that are 
-specific to a given course (e.g., the syllabus) will be generalized to templates 
-instead of being specific to the current course. We welcome contributions to all 
-other aspects of the course/site and are especially seeking exercises and 
-assignments for a range of disciplines.
+@ethanwhite to teach a version of this course (Fall 2016) at the University of
+Florida. The course remains under active development. We welcome contributions
+to all aspects of the course/site and are especially seeking exercises and
+assignments for a range of disciplines. Key site and course materials are
+available as templates for contributions of new materials and other materials
+that are specific to the course (e.g., the syllabus) are developed in a way to
+facilitate easy customization. 
+
+- Here are some examples of customized courses:
+  - [Introduction to Ecology](https://atredennick.github.io/ecology_class/) by [Andrew Tredennick](https://atredennick.github.io/)
+  - [Introduction to Scientific Computing](https://palderman.github.io/IntroSciComp/) by [Phillip Alderman](http://pss.okstate.edu/pass-drctry/faculty/alderman/alderman)
+
 
 ## Where is everything
 
@@ -65,13 +71,18 @@ elsewhere it can certainly be added here.
 The website is setup to be easy to run automatically through GitHub:
 
 1. [Fork](https://github.com/datacarpentry/semester-biology#fork-destination-box)
-   or [import](https://import.github.com/) the repository
+   or [import](https://import.github.com/) the repository to 
+   `https://github.com/yourusername/semester-biology`.
+2. Update `# Setup` information in `_config.yml` in the main directory for
+   proper site rendering.
+   * You must `push` this change to your repository to build and browse your 
+     forked version.
    * In a few minutes you should be able to see the site at:
      `https://yourusername.github.io/semester-biology/`
-2. Edit any of the markdown (.md) files
-3. Commit and push the changes
+3. Edit any of the markdown (.md) files
+4. Commit and push the changes
    * The changes should now be reflected on the website
-4. If you want to use a custom domain name instead of `github.io`, follow
+5. If you want to use a custom domain name instead of `github.io`, follow
    [GitHub's instructions for setting up a custom domain](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/).
 
 If you have any problems please
