@@ -3,7 +3,7 @@ layout: page
 title: Assignment Schedule
 assignments: ['Computer Setup and Git Classrooms', 'Data Organization in
 Spreadsheets', 'Data Cleaning with OpenRefine', 'Introduction to Databases',
-'Joins and Tidy Data', 'Introduction to R and RStudio', 'Project Proposals',
+'Database Queries', 'Introduction to R and RStudio', 'Project Proposals',
 'Working with Data', 'Data Visualization', 'Programming Fundamentals 1',
 'Programming Fundamentals 2', 'Knitr', 'Working with Spatial Data','Working
 with Databases', 'Version Control Basics', 'Putting It All Together',
