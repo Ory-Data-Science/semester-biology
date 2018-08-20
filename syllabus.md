@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Syllabus
-catalog:  CHEM 3352 / PGEL 4001
+catalog:  BPHS 3352 / PGEL 4001
 credits: 3
-semester: Fall 2017
+semester: Fall 2018
 professor: Dr. Jeramia Ory
 office: Jones 1544
 email: jeramia.ory@stlcop.edu
 phone: 314-446-8169
-schedule: ['Monday 1:00-2:50 & Wednesday 12:00 - 12:50 ARB 222']
+schedule: ['Monday & Wednesday 8:30 - 9:50']
 appointment_url: http://drlabratory.com/calendar/schedule-appointment/
 office_hours: By appointment
 ---
